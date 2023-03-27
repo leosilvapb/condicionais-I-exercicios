@@ -1,4 +1,5 @@
-const numero = (num) => {
+const numero = () => {
+    const num = Number(prompt("Digite um numero"))
     if (num === 0) {
         console.log("Esse numero é neutro")
     }
@@ -11,4 +12,5 @@ const numero = (num) => {
     return numero
 }
 
-numero(Number(prompt("Digite um numero")))
+
+numero()
