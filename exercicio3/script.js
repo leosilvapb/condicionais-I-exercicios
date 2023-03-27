@@ -1,21 +1,22 @@
-const verificarNacionalidade = (pais) => {
-   
-    if (pais === "brasileira") {
+const verificarNacionalidade = () => {
+    const nacionalidade = prompt("Informe sua nacionalidade").toLowerCase()
+
+    if (nacionalidade === "brasileira") {
         console.log("Sua nacionalidade é Brasileira ")
     }
-    else if (pais === "argentina") {
+    else if (nacionalidade === "argentina") {
         console.log("Sua nacionalidade é Argentina ")
     }
 
-    else if (pais === "uruguaia" ) {
+    else if (nacionalidade === "uruguaia") {
         console.log("Sua nacionalidade é Uruguaia ")
     }
 
-    else if (pais === "chilena") {
+    else if (nacionalidade === "chilena") {
         console.log("Sua nacionalidade é Chilena ")
     }
 
-    else if (pais === "colombiana") {
+    else if (nacionalidade === "colombiana") {
         console.log("Sua nacionalidade é Colombiana ")
     }
 
@@ -23,8 +24,7 @@ const verificarNacionalidade = (pais) => {
         console.log("Nacionalidade não encontrada ")
     }
 
-    return pais
+    return nacionalidade
 }
 
-const nacionalidade = prompt("InformeSua nacionalidade").toLowerCase()
-verificarNacionalidade(nacionalidade)
+verificarNacionalidade()

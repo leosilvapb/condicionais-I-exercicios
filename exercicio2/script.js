@@ -22,4 +22,5 @@ const cadastro = (idade, ensinoMédio, faculdade) => {
 
 }
 
-cadastro(23, true, true)
+
+cadastro(23, true, false)
